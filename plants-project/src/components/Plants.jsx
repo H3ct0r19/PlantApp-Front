@@ -9,7 +9,7 @@ const Plants = () => {
     const [showForm, setShowForm] = useState(false);
 
     useEffect(() => {
-        fetch('http://localhost:3000/api/plants')
+        fetch('https://plantapp-back.onrender.com/api/plants')
             .then(res => {
                 if (!res.ok) throw new Error('Error fetching plants');
                 return res.json();
