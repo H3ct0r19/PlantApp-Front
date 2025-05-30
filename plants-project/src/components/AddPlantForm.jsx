@@ -19,7 +19,7 @@ const AddPlantForm = ({ onClose, onAdd }) => {
         e.preventDefault();
 
         try {
-            const res = await fetch('http://localhost:3000/api/plants', {
+            const res = await fetch('https://plantapp-back.onrender.com/api/plants', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData)
